@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 const { exec } = require('child_process');
 const { askQuestion } = require('./ask-question');
 const { getCommitPrefix } = require('./get-commit-prefix');
