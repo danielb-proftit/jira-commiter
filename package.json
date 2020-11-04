@@ -1,8 +1,11 @@
 {
-  "name": "git-commiter",
+  "name": "jira-commiter",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "bin": {
+    "jira-commiter": "index.js"
+  },
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"

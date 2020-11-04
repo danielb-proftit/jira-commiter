@@ -1,9 +1,22 @@
+#! /usr/bin/env node
 const { exec } = require('child_process');
-exec('git rev-parse --abbrev-ref HEAD', (err, result, stderr) => {
-    if (err) {
-        // handle your error
-    }
+const { askQuestion } = require('./ask-question');
+const { getCommitPrefix } = require('./get-commit-prefix');
+const { printError } = require('./print-error');
 
-    console.log('result', result);
-    console.log('type of result', typeof result);
+exec('git rev-parse --abbrev-ref HEAD', async(err, branchName, stderr) => {
+    if (err) {
+        printError(err);
+    }
+    const commitPrefix = getCommitPrefix(branchName);
+    const commitMessage = await askQuestion("Your commit message:");
+
+    const fullCommitMessage = `${commitPrefix}\t${commitMessage}`;
+    exec(`git commit -m "${fullCommitMessage}"`, (err, result, stderr) => {
+       if (err){
+           printError(err);
+       }
+       // will print default git commit message (how many lines were inserted or deleted)
+       console.log(result);
+    });
 });
