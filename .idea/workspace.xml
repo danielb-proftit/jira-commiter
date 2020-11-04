@@ -59,10 +59,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e64915d-d45c-4161-b84e-144fa4f0a7c0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/emoji-factions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/random-emoji.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/get-commit-prefix.js" beforeDir="false" afterPath="$PROJECT_DIR$/get-commit-prefix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,6 +103,7 @@
       <workItem from="1604398535078" duration="28000" />
       <workItem from="1604487917820" duration="1402000" />
       <workItem from="1604501141341" duration="116000" />
+      <workItem from="1604505523201" duration="739000" />
     </task>
     <servers />
   </component>

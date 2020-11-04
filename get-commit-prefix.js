@@ -1,8 +1,11 @@
+const { getRandomEmoji } = require('./random-emoji');
+
 const getCommitPrefix = (branchName) => {
     const anchorString = `CRM-`;
     const anchorStringIndex = branchName.indexOf(anchorString);
     const crmTicketId = branchName.substring(anchorStringIndex, branchName.indexOf('/', anchorStringIndex));
-    const commitPrefix = `${crmTicketId} 🚧`;
+    const randomEmoji = getRandomEmoji();
+    const commitPrefix = `${crmTicketId} ${randomEmoji}`;
     return commitPrefix;
 }
 

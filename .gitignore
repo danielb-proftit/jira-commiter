@@ -1,3 +1,8 @@
+.env
+.idea
+workspace.xml
+tasks.xml
+
 # Logs
 logs
 *.log
