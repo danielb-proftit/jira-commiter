@@ -1,10 +1,10 @@
 {
-  "name": "git-commiter",
+  "name": "jira-commiter",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "bin": {
-    "git-commiter": "index.js"
+    "jira-commiter": "index.js"
   },
   "scripts": {
     "start": "node index.js",
