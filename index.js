@@ -7,7 +7,7 @@ const { printError } = require('./print-error');
 
 exec('git rev-parse --abbrev-ref HEAD', async(err, branchName, stderr) => {
     if (err) {
-        printError(err);
+        printError(stderr);
     }
     const commitPrefix = getCommitPrefix(branchName);
     const commitMessage = await askQuestion(chalk.bold.blueBright( "Your commit message: "));
@@ -15,7 +15,7 @@ exec('git rev-parse --abbrev-ref HEAD', async(err, branchName, stderr) => {
     const fullCommitMessage = `${commitPrefix}\t${commitMessage}`;
     exec(`git commit -m "${fullCommitMessage}"`, (err, result, stderr) => {
        if (err){
-           printError(err);
+           printError(stderr);
        }
        // will print default git commit message (how many lines were inserted or deleted)
        console.log(result);
